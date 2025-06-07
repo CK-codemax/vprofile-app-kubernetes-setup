@@ -38,3 +38,6 @@ kops update cluster --name=kopsvpro.ochukowhoro.xyz --state=s3://ochuko-kops-set
 
 kops validate cluster --name=kopsvpro.ochukowhoro.xyz --state=s3://ochuko-kops-setup
 
+# Create ingress controller(ALB)
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.3/deploy/static/provider/aws/deploy.yaml
+
